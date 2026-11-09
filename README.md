@@ -2,6 +2,8 @@
 
 A Windows app that reads the date each photo or video was taken and moves it into `Year\MM - Month` folders.
 
+**📖 New here? Read the [User Guide](GUIDE.md)** for where the app is, how to use it, and how to undo a run.
+
 ```
 Destination\
   2023\
