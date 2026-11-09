@@ -1,3 +1,5 @@
+<img src="Assets/icon-preview.png" width="96" alt="Media Sorter icon" align="right">
+
 # Media Sorter
 
 A Windows app that reads the date each photo or video was taken and moves it into `Year\MM - Month` folders.
@@ -46,4 +48,10 @@ Requires the .NET 10 SDK.
 ```
 dotnet test tests/MediaSorter.Tests
 dotnet publish MediaSorter.csproj -c Release -r win-x64 --self-contained false -p:PublishSingleFile=true -o publish
+```
+
+The app icon (`Assets/app.ico`) is drawn in code by `tools/IconGen`. To change it, edit `tools/IconGen/Program.cs` and run:
+
+```
+dotnet run --project tools/IconGen -- Assets
 ```
